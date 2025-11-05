@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;box-sizing: border-box;
+}
+body{
+    height: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: rgb(0, 128, 96);*/
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(51,51,51,0.5)), url(../imagens/foto-fundo02.jpg); /*COLOQUEI UMA IMAGEM DE FUNDO E POR CIMA COLOQUEI UMA COR GRADIENTE*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: end;
+    
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 10px 5px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+/*
+nav ul li a{
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li a:hover{
+    border: 2px solid #fff;
+    padding: 8px;
+    
+}
+*/
+
+nav ul li a {
+    border: 2px solid transparent;
+    padding: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+nav ul li a:hover {
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* aumenta 8% */
+    color: #fff;
+    border-radius: 8px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 2%;
+}
+
+.picture{
+    width: 50%;
+    height: 100%;
+    padding: 25px 2%;
+    
+}
+
+.picture img{
+   /* width: 450px;
+    height: 550px;*/
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto ; 
+    position: relative; /* Permite mover com left */
+    left: -100%;    /* Começa fora da tela à esquerda */
+    opacity: 0; /* Começa invisível */
+    transition: left 1s ease, opacity 1s ease; /* Suaviza a animação */
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.bio{
+    width: 50%;
+    height: 100%;
+    padding: 25px 2%;
+    
+}
+
+.bio h1{
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: white;
+    position: relative; /* Permite mover com left */
+    right: -100%;    /* Começa fora da tela à esquerda */
+    opacity: 0; /* Começa invisível */
+    transition: right 1s ease, opacity 1s ease; /* Suaviza a animação */
+    
+
+}
+
+.bio h2{
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: white;
+    position: relative; /* Permite mover com left */
+    right: -100%;    /* Começa fora da tela à esquerda */
+    opacity: 0; /* Começa invisível */
+    transition: right 1s ease, opacity 1s ease; /* Suaviza a animação */
+}
+
+
+
+
+
+.bio a{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative; /* Permite mover com left */
+    right: -100%;    /* Começa fora da tela à esquerda */
+    opacity: 0; /* Começa invisível */
+    transition: right 1s ease, opacity 1s ease; /* Suaviza a animação */
+}
+
+.bio a i{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-right: 15px; /* espaçamento entre cada ícone */
+    position: relative; /* Permite mover com left */
+    right: -100%;    /* Começa fora da tela à esquerda */
+    opacity: 0; /* Começa invisível */
+    transition: right 1s ease, opacity 1s ease; /* Suaviza a animação */
+}
+
+.bio a i:hover{
+    transform: scale(1.15);
+    
+}
+
+.bio p{
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    position: relative; /* Permite mover com left */
+    right: -100%;    /* Começa fora da tela à esquerda */
+    opacity: 0; /* Começa invisível */
+    transition: right 1s ease, opacity 1s ease; /* Suaviza a animação */
+    
+}
+
+hr{
+    color: white;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgb(100, 200, 255);
+    
+    
+}
+
+.container2{
+    width: 100%;
+    height: auto;
+    padding: 50px 2%;
+    
+}
+
+.container2 h2{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.container2 p{
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    line-height: 25px;
+   
+}
+
+/*PÁGINA PROJETOS*/
+.projeto{
+    width: 100%;
+    height: auto;
+    padding: 25px 2%;
+    
+}
+
+.projeto img{
+    width: 55%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s ease;/* animação suave */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* sombra branca uniforme ao redor */
+    
+}
+
+.projeto img:hover{
+    transform: scale(1.05);/* aumenta 5% ao passar o mouse */
+}
+
+.projeto > p{
+    padding-top: 22px;
+}
+
+.projeto > a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/****/
+
+/*PÁGINA CONTATOS*/
+
+.container2 h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.container2 ul{
+    list-style: none;
+    width: 50%;
+    height: 390px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgb(245,245,245, 0.5);
+    background-color: rgba(245,245,245, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* sombra branca uniforme ao redor */
+    border-radius: 12px;
+    padding: 40px 4%;
+    transition: 0.5s ease;/* animação suave */
+}
+
+.container2 ul:hover{
+    transform: scale(1.05);/* aumenta 5% ao passar o mouse */
+}
+
+.container2 ul li{
+    padding:15px 0;
+    
+    
+}
+
+
+.container2 ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.container2 ul li a i{
+    font-size: 30px;
+    margin-right: 10px;
+    
+    
+}
+
+
+
+/****/
+
+/*ESTILIZANDO O BOTÃO DE VOLTAR AO TODO EM TODOS AS PAGINAS*/
+
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+}
+
+#btnTopo {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/***/
+
+#btnTopo:hover {
+    background-color: gray;
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+
+    
+}
+
+@media screen and (max-width:768px){
+
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 100px;
+    }
+    
+    .container{
+        display: block;
+    }
+
+    .picture{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .picture img{
+        width: 100%;
+    
+    }
+
+    .bio{
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    .bio h1{
+        text-align: center;
+    }
+
+    .bio p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1024px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 100px;
+    }
+}

@@ -1,2 +1,2 @@
-# P-gina-Pessoal
+# Página-Pessoal
 Portfólio pessoal para contato.

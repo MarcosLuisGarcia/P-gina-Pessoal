@@ -272,7 +272,7 @@ hr{
 }
 
 
-.container2 ul li a{
+.container2 ul li a {
     color: black;
     text-decoration: none;
     font-size: 25px;
@@ -330,48 +330,155 @@ footer{
     
 }
 
-@media screen and (max-width:768px){
 
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-left: 100px;
-    }
-    
-    .container{
-        display: block;
-    }
 
-    .picture{
-        display: block;
-        margin: 0 auto;
-    }
 
-    .picture img{
-        width: 100%;
-    
-    }
 
-    .bio{
-        border: 1px solid black;
-        width: 100%;
-    }
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
 
-    .bio h1{
-        text-align: center;
-    }
+/* === TABLET (até 1024px) === */
+@media (max-width: 1024px) {
+  nav ul {
+    margin-right: 40px;
+    gap: 30px; /* 🔹 menos espaçamento no tablet */
+  }
 
-    .bio p{
-        text-align: center;
-    }
+  nav ul li a {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  .bio h1 {
+    font-size: 32px;
+  }
+
+  .bio h2 {
+    font-size: 22px;
+  }
+
+  .bio p {
+    font-size: 20px;
+  }
+
+  .bio a i {
+    font-size: 40px;
+  }
+
+  .projeto img {
+    width: 70%;
+  }
+
+  .container2 ul {
+    width: 70%;
+  }
+
+  .container2 ul li a {
+    font-size: 22px;
+  }
 }
 
-@media screen and (max-width:1024px){
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-left: 100px;
-    }
+/* === CELULAR MÉDIO (até 768px) === */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px; /* 🔹 espaçamento vertical entre links no mobile */
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .picture, .bio {
+    width: 100%;
+    text-align: center;
+  }
+
+  .picture img {
+    width: 70%;
+  }
+
+  .bio h1 {
+    font-size: 28px;
+  }
+
+  .bio h2 {
+    font-size: 20px;
+  }
+
+  .bio p {
+    font-size: 18px;
+  }
+
+  .bio a i {
+    font-size: 35px;
+  }
+
+  .container2 ul {
+    width: 85%;
+    height: auto;
+  }
+
+  .container2 ul li a {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
 }
+
+/* === CELULAR PEQUENO (até 480px) === */
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+
+  .bio h1 {
+    font-size: 22px;
+  }
+
+  .bio h2 {
+    font-size: 18px;
+  }
+
+  .bio p {
+    font-size: 16px;
+  }
+
+  .bio a i {
+    font-size: 30px;
+  }
+
+  .picture img {
+    width: 85%;
+  }
+
+  .container2 ul {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .container2 ul li a {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}   
